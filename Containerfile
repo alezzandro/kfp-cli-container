@@ -18,5 +18,5 @@ RUN pip install --no-cache-dir -r requirements.txt && \
     chmod -R g+w /opt/app-root/lib/python3.12/site-packages && \
     fix-permissions /opt/app-root -P
 
-ENTRYPOINT ["bash", "sleep 30m"]
+ENTRYPOINT ["bash", "-c", "sleep 30m"]
 
